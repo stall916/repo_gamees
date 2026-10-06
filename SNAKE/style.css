@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #090b16;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    letter-spacing: 5px;
+    color: #00e5ff;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #8992aa;
+    margin-bottom: 15px;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+
+    background: #111528;
+    border: 2px solid #252d4a;
+
+    border-radius: 10px;
+
+    padding: 12px 18px;
+    margin-bottom: 10px;
+
+    font-weight: bold;
+}
+
+#score {
+    color: #00e5ff;
+}
+
+#goldScore {
+    color: #ffd43b;
+}
+
+canvas {
+    width: 100%;
+    max-width: 600px;
+
+    aspect-ratio: 1 / 1;
+
+    background: #0d1120;
+
+    border: 3px solid #00e5ff;
+    border-radius: 10px;
+
+    display: block;
+    margin: auto;
+}
+
+#message {
+    height: 25px;
+
+    margin-top: 8px;
+
+    color: #ff4655;
+    font-weight: bold;
+}
+
+.controls {
+    color: #8992aa;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+
+    background: #00e5ff;
+    color: #061018;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6ff2ff;
+}
+
+.restart {
+    margin-top: 15px;
+    padding: 11px 20px;
+}
+
+.mobile-controls {
+    display: none;
+    margin-top: 15px;
+}
+
+.mobile-controls button {
+    width: 50px;
+    height: 50px;
+
+    margin: 2px;
+
+    font-size: 18px;
+}
+
+.leaderboard {
+    margin-top: 15px;
+
+    padding: 15px;
+
+    background: #111528;
+    border: 2px solid #252d4a;
+
+    border-radius: 10px;
+}
+
+.leaderboard h2 {
+    color: #ffd43b;
+    margin-bottom: 8px;
+}
+
+#scores {
+    list-style-position: inside;
+    color: #dce3f5;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .mobile-controls {
+        display: block;
+    }
+
+}
