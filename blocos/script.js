@@ -13,7 +13,7 @@ const ctx = canvas.getContext("2d");
 // funil/buraco do meio (ou abrir caminho pelos blindados), e quem erra o quique
 // nessa jogada perde a bola. Risco alto = recompensa alta."
 const ROW_POINTS = [50, 40, 30, 20, 10];
-const ROW_COLORS = ["#0e002dff", "#060022ff", "#0e002dff", "#191994", "#38bdf8"];
+const ROW_COLORS = ["#072f4e", "#1f547e", "#3378ad", "#284eee", "#2898ee"];
 
 // ---------- LAYOUT AUTORAL (o proprio array de bricks) ----------
 // '#' = tijolo normal | 'A' = tijolo blindado (2 hits) | '.' = vazio

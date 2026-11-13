@@ -7,8 +7,8 @@ body{
 }
 
 canvas{
-    background-color: #1c1e4b;
-    border: 3px solid #191994;
+    background-color: #2b2e65;
+    border: 3px solid #191994   ;
     margin-top: 16px;
     max-width: 100%;
     cursor: none;
