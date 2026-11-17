@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artilheiro</title>
+    <title>Artilheiro Defender</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Artilheiro Defender</h1>
-        <p>Setas ← e → ou A e D para mover. Espaço para ATIRAR. P para PAUSAR</p>
+        <p>← → ou A/D: mover | Espaço, ↑ ou W: atirar | P: pausar | R: reiniciar</p>
+        <p>Não deixe os inimigos passarem pela linha de defesa: cada fuga custa 1 vida.</p>
     </header>
-    <div class="hud">
+
+    <div class="hud" aria-live="polite">
         <span>Pontos: <strong id="score">0</strong></span>
         <span>Vidas: <strong id="lives">3</strong></span>
         <span>Ondas: <strong id="wave">1</strong></span>
     </div>
-    <canvas id="game" width="480" height="640"></canvas>
+
+    <canvas id="game" width="480" height="640" aria-label="Área do jogo Artilheiro Defender"></canvas>
     <script src="game.js"></script>
 </body>
 </html>
